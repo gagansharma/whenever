@@ -11,7 +11,7 @@ set :job_template, "/bin/bash -l -c ':job'"
 
 set :runner_command, case
   when Whenever.bin_rails?
-    "bin/rails runner"
+    "rails runner"
   when Whenever.script_rails?
     "script/rails runner"
   else
